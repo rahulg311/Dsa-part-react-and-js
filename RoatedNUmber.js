@@ -24,4 +24,5 @@ function rotateArray(arr, k) {
 let arr = [1, 2, 3, 4, 5];
 let k = 2;
 let rotatedArr = rotateArray(arr, k);
+
 console.log(rotatedArr); // Output: [4, 5, 1, 2, 3]

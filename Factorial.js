@@ -1,9 +1,18 @@
-function fac(n){
-    if(n<=0) return 1
-    return n*fac(n-1);
+// Recursive
+function factorialRecursive(n) {
+    if (n === 0 || n === 1) return 1;
+    return n * factorialRecursive(n - 1);
 }
 
-console.log("factorial--",fac(5))
+// Iterative
+function factorialIterative(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
 
-// input -- 5
-// output -- 120
+// Example
+console.log(factorialRecursive(5)); // 120
+console.log(factorialIterative(5)); // 120

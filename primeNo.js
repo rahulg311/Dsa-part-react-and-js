@@ -1,4 +1,13 @@
 
+// A prime number is a natural number greater than 1 that has exactly two factors:
+
+// 1
+
+// Itself
+
+// This means a prime number cannot be divided evenly by any number other than 1 and itself
+
+
 
 let primeno =[]
 function data(z){

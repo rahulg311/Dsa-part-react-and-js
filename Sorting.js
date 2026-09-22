@@ -85,3 +85,25 @@ console.log("Welcome to Programiz!",selectionSort(arr));
 
 // input arr=[9,7,5,4,8,2,6,1];
 // output [1, 2, 4, 5,6, 7, 8, 9]
+
+
+
+
+
+function quickSort(arr) {
+  if (arr.length <= 1) return arr;  // 1️⃣ base case
+
+  let pivot = arr[arr.length - 1]; // 2️⃣ last element as pivot
+
+  let left = [], right = [];       // 3️⃣ partition arrays
+
+  for (let i = 0; i < arr.length - 1; i++) { // 4️⃣ pivot se compare
+    console.log(arr[i] < pivot)
+    if (arr[i] < pivot) left.push(arr[i]);
+    else right.push(arr[i]);
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)]; // 5️⃣ recursive call
+}
+
+console.log(quickSort([144, 22, 20, 30, 50]));

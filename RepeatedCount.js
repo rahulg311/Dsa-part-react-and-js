@@ -12,7 +12,8 @@ for (let i = 0; i < data.length; i++) {
 }
 
 console.log(countdata); // Output the countdata object
-
+Nehagupta@6969
+max74
 
 //  word cont number 
 // const data = "rahul gupta rahul kumar kumar"
